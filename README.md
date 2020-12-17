@@ -13,12 +13,5 @@ pip install git+https://github.com/srw2ho/tomlutils.git
 ```python
 from tomlconfig.utils import TomlParser
 
-PROJECT_NAME = 'xxxxxxxx'
-toml = Parser(f'{PROJECT_NAME}.toml')
 
-MQTT_NETWORK_NAME = toml.get('mqtt.network_name', 'mh')
-MQTT_PORT = toml.get('mqtt.port', 1883)
-MQTT_USERNAME = toml.get('mqtt.username', '')
-
-INFLUXDB_FILTER = toml.get('influxdb.filter', [])
 ```
