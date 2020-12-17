@@ -6,7 +6,7 @@ class Test(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.parser = TomlParser('ppmp2influx.toml')
+        cls.parser = TomlParser('influxdb.toml')
 
     def test_parser(self):
         # test_int = self.parser.get('test_int', 0)

@@ -33,7 +33,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name=NAME,
     version_format='{tag}.dev{commitcount}+{gitsha}',
-    author="Moehwald GmbH",
+    author="srw2ho",
     author_email="",
     description="",
     long_description=LONG_DESCRIPTION,
