@@ -32,7 +32,8 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name=NAME,
-    version_format='{tag}.dev{commitcount}+{gitsha}',
+    # version_format='{tag}.dev{commitcount}+{gitsha}',
+    version_config=True,
     author="srw2ho",
     author_email="",
     description="",
@@ -42,6 +43,9 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     package_data={},
     install_requires=DEPENDENCIES,
+    setup_requires=[
+        'setuptools-git-version',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: Other/Proprietary License"
